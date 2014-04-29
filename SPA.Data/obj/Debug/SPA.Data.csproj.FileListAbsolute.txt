@@ -1,0 +1,14 @@
+c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\bin\Debug\SPA.Data.dll.config
+c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\bin\Debug\SPA.Data.dll
+c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\bin\Debug\SPA.Data.pdb
+c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\bin\Debug\EntityFramework.dll
+c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\bin\Debug\GenericRepository.dll
+c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\bin\Debug\GenericRepository.EF.dll
+c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\bin\Debug\SPA.Model.dll
+c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\bin\Debug\SPA.Model.pdb
+c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\bin\Debug\EntityFramework.xml
+c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\obj\Debug\SPA.Data.csprojResolveAssemblyReference.cache
+c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\obj\Debug\SPA.Data.dll
+c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\obj\Debug\SPA.Data.pdb
