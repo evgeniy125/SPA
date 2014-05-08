@@ -1,0 +1,48 @@
+﻿<script type="text/javascript" src="../../Scripts/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="../../Scripts/sammy-0.7.4.js"></script>
+<script type="text/javascript" src="../../Scripts/custom/routing.js"></script>
+<script type="text/javascript" src="../../Scripts/bootstrap.js"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Showcase</title>
+</head>
+
+<!--ProductById маршрутами чтобы не пересекался с ProductBySection (Секцию можно на string сделать)-->
+<!--Сделать переход по названию категории, а не по id-->
+<!--Сделать переход из списка категорий, а не из отдельных ссылок-->
+<!--Сделать переход к продукту из списка продуктов-->
+<body>
+    <div id="header">
+        <a href="#/products">Products</a>
+        <a href="#/categories">Categories</a>
+        <a href="#/products/details/3">Product 3</a>
+        <a href="#/products/category/1">Category 1</a>
+        <a href="#/products/category/2">Category 2</a>
+    </div>
+    <div id="main">
+        <section class="main">
+            @RenderPage("~/Views/_Categories.cshtml")
+            @RenderPage("~/Views/_Product.cshtml")
+            @RenderPage("~/Views/_Products.cshtml")
+            @RenderPage("~/Views/_ProductsByCategory.cshtml")
+        </section>
+    </div>
+</body>
+</html>
+
+<!--Script for Products view-->
+<script type="text/javascript">
+
+    //require(
+    //    ['dataservice.product'],
+    //    function (dataservice) {
+    //        getProducts();
+    //    });
+</script>
+
+
+
+
+

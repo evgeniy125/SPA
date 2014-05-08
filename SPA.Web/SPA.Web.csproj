@@ -42,8 +42,19 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework.Extended">
+      <HintPath>..\packages\EntityFramework.Extended.6.1.0.95\lib\net45\EntityFramework.Extended.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="GenericRepository, Version=0.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\GenericRepository.0.2.1.0\lib\net40\GenericRepository.dll</HintPath>
+    </Reference>
+    <Reference Include="GenericRepository.EF, Version=0.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\GenericRepository.EF.0.2.1.0\lib\net40\GenericRepository.EF.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -139,9 +150,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ProductController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -149,13 +160,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="index.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <None Include="Scripts\amplify-vsdoc.js" />
+    <Content Include="Scripts\amplify.js" />
+    <Content Include="Scripts\amplify.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
     <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
@@ -167,12 +187,33 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\custom\routing.js" />
+    <Content Include="Scripts\custom\vm.js" />
+    <Content Include="Scripts\custom\vm.products.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\custom\binder.js" />
+    <Content Include="Scripts\custom\bootstrapper.js" />
+    <Content Include="Scripts\custom\datacontext.js" />
+    <Content Include="Scripts\custom\dataprimer.js" />
+    <Content Include="Scripts\custom\dataservice.category.js" />
+    <Content Include="Scripts\custom\dataservice.js" />
+    <Content Include="Scripts\custom\dataservice.product.js" />
+    <Content Include="Scripts\custom\getProducts.js" />
+    <Content Include="Scripts\custom\main.js" />
+    <Content Include="Scripts\GPL-LICENSE.txt" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\MIT-LICENSE.txt" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\r.js" />
+    <Content Include="Scripts\README.txt" />
+    <Content Include="Scripts\require.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\sammy-0.7.4.js" />
+    <Content Include="Scripts\sammy-0.7.4.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -183,12 +224,11 @@
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\_Products.cshtml" />
+    <Content Include="Views\_Categories.cshtml" />
+    <Content Include="Views\_Product.cshtml" />
+    <Content Include="Views\_ProductsByCategory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SPA.Data\SPA.Data.csproj">
@@ -201,9 +241,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>

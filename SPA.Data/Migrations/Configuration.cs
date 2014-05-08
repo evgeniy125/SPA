@@ -4,6 +4,7 @@ namespace SPA.Data.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using SPA.Model;
 
     internal sealed class Configuration : DbMigrationsConfiguration<SPA.Data.ShowcaseContext>
     {
@@ -12,7 +13,7 @@ namespace SPA.Data.Migrations
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(SPA.Data.ShowcaseContext context)
+        protected override void Seed(ShowcaseContext context)
         {
             //  This method will be called after migrating to the latest version.
 
@@ -26,6 +27,10 @@ namespace SPA.Data.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            for (int i = 0; i < 100; i++)
+            {
+                context.Products.AddOrUpdate(new Product { Name = "dsgsdg" + i.ToString(), Description = "sdgsdg", Quantity = 4 });
+            }
         }
     }
 }

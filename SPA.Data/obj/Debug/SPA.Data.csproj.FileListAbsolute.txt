@@ -12,3 +12,6 @@ c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\bin\D
 c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\obj\Debug\SPA.Data.csprojResolveAssemblyReference.cache
 c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\obj\Debug\SPA.Data.dll
 c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\obj\Debug\SPA.Data.pdb
+C:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\obj\Debug\SPA.Data.Migrations.initial.resources
+C:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\obj\Debug\SPA.Data.csproj.GenerateResource.Cache
+C:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Data\obj\Debug\SPA.Data.Migrations.CategoryNameTypeChanged.resources

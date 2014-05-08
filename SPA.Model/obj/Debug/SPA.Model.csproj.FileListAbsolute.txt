@@ -1,5 +1,4 @@
 c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Model\bin\Debug\SPA.Model.dll
 c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Model\bin\Debug\SPA.Model.pdb
-c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Model\obj\Debug\SPA.Model.csprojResolveAssemblyReference.cache
 c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Model\obj\Debug\SPA.Model.dll
 c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Model\obj\Debug\SPA.Model.pdb

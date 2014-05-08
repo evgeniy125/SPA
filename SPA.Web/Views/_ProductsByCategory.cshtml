@@ -1,0 +1,14 @@
+﻿<section id="productsByCategory" class="view">
+    Hello from products by category view!
+    <script type="text/javascript">
+        //Получить products по параметру category
+        function GetProductsByCategory(categoryId) {
+            var uri = '../api/products/category/' + categoryId;
+            $.getJSON(uri).done(function (data) {
+                $.each(data, function (key, item) {
+                    $('<p>', { text: item['Name'] }).appendTo($('#productsByCategory'));
+                });
+            })
+        }
+    </script>
+</section>

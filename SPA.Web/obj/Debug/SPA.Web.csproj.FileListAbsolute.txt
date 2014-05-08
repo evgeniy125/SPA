@@ -40,3 +40,5 @@ c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Web\bin\An
 c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Web\obj\Debug\SPA.Web.csprojResolveAssemblyReference.cache
 c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Web\obj\Debug\SPA.Web.dll
 c:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Web\obj\Debug\SPA.Web.pdb
+C:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Web\bin\EntityFramework.Extended.dll
+C:\Users\Евгений\documents\visual studio 2013\Projects\SPA\SPA.Web\bin\EntityFramework.Extended.xml

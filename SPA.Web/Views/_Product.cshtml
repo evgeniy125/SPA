@@ -1,0 +1,15 @@
+﻿<section id="product" class="view">
+    Hello from product view!
+    <script type="text/javascript">
+
+        function GetProductById(productId) {
+            var uri = '../api/products/details/' + productId;
+            $.getJSON(uri).done(function (data) {
+                //Вывести подробную информацию о продукте
+                $('<p>', { text: data['Name'] }).appendTo($('#product'));
+                $('<p>', { text: data['Quantity'] }).appendTo($('#product'));
+                $('<p>', { text: data['Description'] }).appendTo($('#product'));
+            })
+        }
+    </script>
+</section>
