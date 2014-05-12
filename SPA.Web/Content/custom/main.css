@@ -1,0 +1,17 @@
+﻿body {
+}
+
+#categories {
+    float: left;
+    width: 10%;
+}
+
+#products {
+    float: right;
+    width: 80%;
+}
+
+#productsByCategory {
+    float: right;
+    width: 80%;
+}

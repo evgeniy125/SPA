@@ -1,5 +1,4 @@
 ﻿<section id="categories" class="view">
-    Hello from categories view!
     <div class="container">
         <div id="categories-div"></div>
     </div>
@@ -7,7 +6,7 @@
         var uri = '../api/categories';
         $.getJSON(uri).done(function (data) {
             $.each(data, function (key, item) {
-                $("#categories-div").append("<div class='category-div'><span class=category-id>" + item['Id'] + "</span>" + item['Name'] + "</div>")
+                $("#categories-div").append("<div class='category-div'><span hidden='true' class='category-id'>" + item['Id'] + "</span>" + item['Name'] + "</div>")
             });
             $(".category-div").click(function (event) {
                 var div = $(this);

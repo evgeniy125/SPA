@@ -1,13 +1,13 @@
 ﻿<section id="products" class="view">
-    Hello from products view!
     <div class="container">
-        <div id="products-div" class="row"></div>
+        <div id="products-div" class="row">
+        </div>
     </div>
     <script type="text/javascript">
         var uri = '../api/products';
         $.getJSON(uri).done(function (data) {
             $.each(data, function (key, item) {
-                $("#products-div").append("<div class='product-div col-md-4'><span class='product-id'>" + item['Id'] + "</span>" + item['Name'] + "</div>");
+                $("#products-div").append("<div class='product-div col-md-4'><span hidden=true class='product-id'>" + item['Id'] + "</span><h3>" + item['Name'] + "</h3></div>");
             });
             $(".product-div").click(function (event) {
                 var div = $(this);

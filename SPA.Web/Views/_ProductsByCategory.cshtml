@@ -1,14 +1,21 @@
 ﻿<section id="productsByCategory" class="view">
-    Hello from products by category view!
+    <div class="container">
+        <div id="products-by-category" class="row">
+        </div>
+    </div>
     <script type="text/javascript">
         //Получить products по параметру category
         function GetProductsByCategory(categoryId) {
             var uri = '../api/products/category/' + categoryId;
             $.getJSON(uri).done(function (data) {
                 $.each(data, function (key, item) {
-                    $('<p>', { text: item['Name'] }).appendTo($('#productsByCategory'));
+                    $("#productsByCategory").append("<div class='product-div col-md-4'><span hidden=true class='product-id'>" + item['Id'] + "</span><h3>" + item['Name'] + "</h3></div>");
                 });
-            })
+                $(".product-div").click(function (event) {
+                    var div = $(this);
+                    document.location.href = '#/products/details/' + div.children(".product-id").text();
+                });
+            });
         }
     </script>
 </section>
